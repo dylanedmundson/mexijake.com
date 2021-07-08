@@ -1,0 +1,26 @@
+.shop-item{
+}
+
+.carousel{
+    display: block;
+    width: 40%;
+    height: 200px;
+}
+
+.carousel-img {
+    height: 200px;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.carousel-caption {
+    color: black;
+    position: absolute;
+    bottom: -15px;
+    opacity: 0.8;
+}
+
+.carousel-icon {
+    font-size: 32pt;
+    color: black;
+}

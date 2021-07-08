@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import AdminPage from './AdminPage'
+
+
+function CurrentRoute() {
+  if (window.location.pathname.endsWith('admin')) {
+    return(
+      <Router>
+         <Route path="/admin" component={AdminPage}/>
+      </Router>
+    );
+  } else {
+    return(
+      <Router>
+         <Route path="/" component={App}/>
+         <iframe title="spotify-playlist" src="https://open.spotify.com/embed/artist/2y6B4tT2CqHDEk3FpYPRau" width="20%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </Router>
+    );
+  }
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <CurrentRoute/>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

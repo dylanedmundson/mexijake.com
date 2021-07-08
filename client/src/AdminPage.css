@@ -1,0 +1,32 @@
+@media only screen and (min-width: 769px) { 
+    .todo-list {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+    }
+    
+    .background {
+        margin: 20px;
+    }
+
+    .shop-list {
+        float: left;
+        max-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    .background {
+        text-align: center;
+    }
+
+    .todo-list {
+        display: block;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+
+    .shopList {
+    }
+}

@@ -1,0 +1,44 @@
+.check-box {
+    border: none;
+    background-color: transparent;
+}
+
+.check-box:hover {
+    background-color: rgb(128, 128, 128, 0.8);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-item {
+    border: none;
+    background-color: transparent;
+    font-size: large;
+}
+
+.button-container {
+    float: right;
+    text-align: right;
+}
+
+.todo-item-text-container {
+    inline-size: 150px;
+    overflow-wrap: break-word;
+    float: left;
+}
+
+.todo-input-container {
+    width: 100%;
+}
+
+.todo-input-text-container {
+    float: left;
+    width: 70%
+}
+
+.todo-input-bttn-container{
+    float: right;
+    text-align: right;
+    width: 50px;
+    max-width: 50px;
+    margin-right: 10px;
+}
