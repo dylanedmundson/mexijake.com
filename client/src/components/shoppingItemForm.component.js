@@ -6,6 +6,9 @@ import axios from 'axios'
 
 //TODO: add logic for error handling on bad inputs
 //TODO: handle cancel on image choise/ causes error
+//TODO: make description input multiple lines
+//TODO: add sizes for each color to shop item model and on form, then update in shopItem.component
+//TODO: debuf interface
 //TODO: add commenting
 const SIZE_INDEX = {
     XS: 0, S: 1, M: 2, LG: 3, XL: 4

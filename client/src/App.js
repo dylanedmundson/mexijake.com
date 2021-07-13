@@ -2,17 +2,20 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 // component imports
 import NavBar from './components/navbar.component';
-import Shop from './components/shop.component'
+import ShopPage from './pages/ShopPage'
+import HomePage from './pages/HomePage';
+import EventsPage from './pages/EventsPage';
+import CartPage from './pages/CartPage';
 
 function App() {
     return (
       <Router>
         <div className="container">
           <NavBar />
-          <Route path="/" exact/>
-          <Route path="/events"/>
-          <Route path="/shop" component= {Shop}/>
-          <Route path="/cart"/>
+          <Route path="/" exact component= {HomePage}/>
+          <Route path="/events" component= {EventsPage}/>
+          <Route path="/shop" component= {ShopPage}/>
+          <Route path="/cart" component= {CartPage}/>
         </div>
       </Router>
     );

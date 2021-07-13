@@ -35,7 +35,8 @@ export default class ShopListAdmin extends Component {
             {
                 this.state.shopListItems.map(shopItem => {
                     return(
-                        <ShopItem item={shopItem} key={'shop-item-' + shopItem._id}/>
+                        <ShopItem item={shopItem} key={'shop-item-' + shopItem._id}
+                                    isProduction={false} parent={this}/>
                     );
                 })
             }

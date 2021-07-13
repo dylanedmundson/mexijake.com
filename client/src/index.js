@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import AdminPage from './AdminPage'
+import AdminPage from './pages/AdminPage'
 
 
 function CurrentRoute() {
@@ -17,7 +17,6 @@ function CurrentRoute() {
     return(
       <Router>
          <Route path="/" component={App}/>
-         <iframe title="spotify-playlist" src="https://open.spotify.com/embed/artist/2y6B4tT2CqHDEk3FpYPRau" width="20%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </Router>
     );
   }

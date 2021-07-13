@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import TodoList from './components/todolist.component';
-import ShopListAdmin from './components/shopListAdmin.component';
+import TodoList from '../components/todolist.component';
+import ShopListAdmin from '../components/shopListAdmin.component';
 import './AdminPage.css'
 
 export default class AdminPage extends Component {
